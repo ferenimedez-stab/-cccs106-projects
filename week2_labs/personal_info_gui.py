@@ -84,7 +84,7 @@ def main(page: ft.Page):
 
             # Calculate birth year
             current_year = datetime.now().year
-            birth_year = current_year - int(age.value)
+            birth_year = current_year - int(str(age.value))
             graduation_year = current_year + (5 - int(year_level.value[0]) if year_level.value else 5)
 
             # Generate profile
@@ -131,7 +131,7 @@ def main(page: ft.Page):
             content=ft.Text(message),
             actions=[ft.TextButton("OK", on_click=lambda e: close_error_dialog(error_dialog))]
         )
-        page.dialog = error_dialog
+        page.overlay.append(error_dialog)
         error_dialog.open = True
         page.update()
 

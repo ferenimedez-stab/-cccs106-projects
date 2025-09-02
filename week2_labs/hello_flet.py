@@ -76,7 +76,7 @@ def main(page: ft.Page):
             ]
         )
 
-        page.dialog = dialog
+        page.overlay.append(dialog)
         dialog.open = True
         page.update()
 

@@ -3,14 +3,14 @@
 **Student Name:** Fernanne Hannnah A. Enimedez
 **Student ID:** 231002274
 **Section:** A
-**Date:** September XX, 2025
+**Date:** September 2, 2025
 
 ## Git Configuration
 
 ### Repository Setup
 - **GitHub Repository:** https://github.com/ferenimedez-stab/-cccs106-projects.git
 - **Local Repository:** ✅ Initialized and connected
-- **Commit History:** 4 commits with descriptive messages
+- **Commit History:** 7 (including the latest) commits with descriptive messages
 
 ### Git Skills Demonstrated
 - ✅ Repository initialization and configuration
@@ -26,7 +26,6 @@
 - **UI Components:** Text, TextField, Buttons, Dialog, Containers
 - **Notes:**
     - Student information displayed in the application can be modified in the source code.
-    - The <i>App Info</i> button is not yet functional.
     - The UI elements are not responsive.
     - In the <i>Interactive Section</i>, there are no input constraints: integers and special characters are accepted and treated as strings.
 
@@ -73,11 +72,32 @@ One specific issue occurred when I was working with a commit command that contai
 I misread the command and mistakenly added only the first line, ending it with what I thought was an omitted closing quotation mark. When I tried the same commands again by copy-pasting, the terminal treated each line individually. I solved this mishap by removing the line breaks and rewriting the command in a single line, separating phrases with spaces. Fortunately, the mistakes made did not affect the repository in any way.
 
 ### Flet attribute issue
-For Exercise 2.2, where we create two basic Flet applications, VS Code flagged certain attributes, such as page.dialog, with the error message:
+For Exercise 2.2, where we create two basic Flet applications, VS Code flagged certain attributes: `page.dialog` and `age.value`.
+
+
+`page.dialog` had the error message:
 
     Cannot assign to attribute "dialog" for class "Page" Attribute "dialog" is unknown Pylance (reportAttributeAccessIssue)
 
-In an attempt to troubleshoot the issue, I researched and learnt that this warning comes from Pylance's type checking. Flet uses dynamic attributes that are not always declared in the type stubs that Pylance relies on, so VS Code flags them despite being valid at runtime. The code will execute nonetheless as allowed by the framework.
+![page.dialog error](/week2_labs/lab2_screenshots/page.dialog%20error.png)
+
+The initial attempt to troubleshoot this issue, I researched and concluded that this was caused by how Pylance performs type checking. Since Flet uses dynamic attributes that are not always declares in the type stubs Pylance relies on, VS code flags them despite being valid at runtime.
+
+However, upon revisiting the code, I noticed that the function for the `App info` button were neatly defined, which meant the issue wasn't caused by missing logic. This led me to a deeper investigation, where I confirmed that the `page.dialog = dialog` approach had been deprecated in the current version of Flet installed (v0.28.3).
+
+The correct approach is to append the dialog to the page's overlay:
+
+![page.dialog error - FIXED](/week2_labs/lab2_screenshots/page.dialog%20error%20-%20FIXED.png)
+
+As for the `.value` property, the initial conclusion stands. This means that it exists and works fine at runtime, Pylance does not always recognise it.
+
+![.value warning](/week2_labs/lab2_screenshots/age.value%20warning.png)
+
+To address this, the code can be updated to explicitly cast the value before converting it to an integer:
+
+![.value warning - FIXED](/week2_labs/lab2_screenshots/age.value%20warning%20-%20FIXED.png)
+
+This small change relieves the type-cast warning without affection the app's functionalities.
 
 ## Learning Outcomes
 
@@ -111,7 +131,6 @@ In terms of GUI development, I realised some editor warnings (like Flet and Pyla
 
 ### Hello Flet Application
 - **Responsive UI:** Wrap forms and controls in expandable containers so they resize with the viewport.
-- **Functional buttons:** App info button can open a modal that fetches features, version details, dependencies, etc.
 - **Input Constraints and Validation:** Enforce field types or patterns, and display inline errors before or on submission.
 - **Modifiable Student Information:** Add a toggle for viewing and editing modes with save/cancel actions.
 
