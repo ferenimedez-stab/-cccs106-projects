@@ -3,14 +3,14 @@
 **Student Name:** Fernanne Hannnah A. Enimedez
 **Student ID:** 231002274
 **Section:** A
-**Date:** September 2, 2025
+**Date:** September 3, 2025
 
 ## Git Configuration
 
 ### Repository Setup
 - **GitHub Repository:** https://github.com/ferenimedez-stab/-cccs106-projects.git
 - **Local Repository:** ✅ Initialized and connected
-- **Commit History:** 7 (including the latest) commits with descriptive messages
+- **Commit History:** `8` (including the latest) commits with descriptive messages
 
 ### Git Skills Demonstrated
 - ✅ Repository initialization and configuration
@@ -27,7 +27,7 @@
 - **Notes:**
     - Student information displayed in the application can be modified in the source code.
     - The UI elements are not responsive.
-    - In the <i>Interactive Section</i>, there are no input constraints: integers and special characters are accepted and treated as strings.
+    - In the `Interactive Section`, there are no input constraints: integers and special characters are accepted and treated as strings.
 
 ### 2. personal_info_gui.py
 - **Status:** ✅ Completed
@@ -36,10 +36,10 @@
 - **Error Handling:** Input validation and user feedback
 - **Notes:**
     - The UI elements are not responsive.
-    - Input field errors are not indicated.
-    - Invalid input in the Age field nullifies profile generation.
+    - Only the name and age fields are required.
+    - Invalid input in the `Age` field nullifies profile generation.
     - All other fields accept integers and special characters.
-    - Clicking the <i>Clear Form</i> button resets all input fields, but retains previous dropdown selections.
+    - Clicking the `Clear Form` button resets all input fields, but retains previous dropdown selections.
         - However, this is a frontend issue: if a new selection is not made, no input is registered on the backend.
 
 ## Technical Skills Developed
@@ -117,8 +117,12 @@ In terms of GUI development, I realised some editor warnings (like Flet and Pyla
 - **GitHub repository with commit history**
     ![GitHub repository with commit history](/week2_labs/lab2_screenshots/GitHub%20Repo%20with%20commit%20history.png)
 
+    * Note: The latest commit is not included in the image.
+
 - **Local git log showing commits**
     ![Local git log showing commits](/week2_labs/lab2_screenshots/local%20git%20log%20of%20commits.png)
+
+    * Note: The latest commit is not included in the image.
 
 ### GUI Applications
 - **hello_flet.py running with all features**
