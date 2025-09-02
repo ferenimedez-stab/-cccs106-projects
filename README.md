@@ -41,7 +41,7 @@ Academic Year 2025-2026
 3. Flet installed: `pip install flet==0.28.3`
 
 ### Running GUI Applications
-1. Open `week2_labs` folder in File Explorer
+1. Open `week2_labs` folder in File Explorer.
 2. In the address bar, type in `cmd` and enter.
 3. Run applications using the following commands:
     - python hello_flet.py
