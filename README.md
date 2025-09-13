@@ -19,6 +19,9 @@ Academic Year 2025-2026
 - `week2_labs/personal_info_gui.py` - Enhanced personal information manager
 - `week2_labs/enhanced_calculator.py` - GUI calculator (coming soon)
 
+### Week 2 Labs - Flet User Login Application Development
+- `week3_labs/main.py` - User Login Form application with MySQL database integration
+
 ### Module 1 Final Project
 - `module1_final/` - Final integrated project (TBD)
 
@@ -42,7 +45,25 @@ Academic Year 2025-2026
 
 ### Running GUI Applications
 1. Open `week2_labs` folder in File Explorer.
+
 2. In the address bar, type in `cmd` and enter.
+
 3. Run applications using the following commands:
     - python hello_flet.py
+
     - python personal_info_gui.py
+
+### Running User Login Application
+1. Open `cccs106-projects` folder in File Explorer.
+
+2. In the address bar, type in `cmd` and enter.
+
+3. Activate virtual environment using the command:
+    - cccs106_env_enimedez\Scripts\activate
+
+4. Move to `week3_labs` folder directory by the entering:
+    - cd week3_labs
+
+5. Run app using the command:
+    - flet run
+    - Note: Ensure your MySQL server is running and the fletapp database exists before running the app.
