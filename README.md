@@ -19,8 +19,11 @@ Academic Year 2025-2026
 - `week2_labs/personal_info_gui.py` - Enhanced personal information manager
 - `week2_labs/enhanced_calculator.py` - GUI calculator (coming soon)
 
-### Week 2 Labs - Flet User Login Application Development
+### Week 3 Labs - Flet User Login Application Development
 - `week3_labs/main.py` - User Login Form application with MySQL database integration
+
+### Week 4 Labs - Flet User Login Application Development
+- `week4_labs/main.py` - Contact Book application with SQLite database integration
 
 ### Module 1 Final Project
 - `module1_final/` - Final integrated project (TBD)
@@ -61,9 +64,26 @@ Academic Year 2025-2026
 3. Activate virtual environment using the command:
     - cccs106_env_enimedez\Scripts\activate
 
-4. Move to `week3_labs` folder directory by the entering:
-    - cd week3_labs
+4. Move to `userlogin` directory by the entering:
+    - `cd week3_labs\userlogin`
 
 5. Run app using the command:
     - flet run
     - Note: Ensure your MySQL server is running and the fletapp database exists before running the app.
+
+### Running Contact Book Application
+
+1. Open the `cccs106-projects` folder in File Explorer.
+
+2. In the address bar, type in `cmd` and press **Enter**.
+
+3. Activate the virtual environment using the command:
+   - `cccs106_env_enimedez\Scripts\activate`
+
+4. Move to the `contact_book_app` directory by entering:
+   - `cd week4_labs\contact_book_app`
+
+5. Run the app using the command:
+   - [As desktop app] `flet run`
+   - [As web app] `flet run --web`
+   - [As android app] `flet run --android`
