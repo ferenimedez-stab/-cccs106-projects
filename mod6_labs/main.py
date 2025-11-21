@@ -23,9 +23,9 @@ class WeatherApp:
         self.weather_service = WeatherService()
         self.current_city = ""
         self.current_weather_data = None
-        self.history_file = Path("mod6_labs/search_history.json")
+        self.history_file = Path(__file__).parent / "search_history.json"
         self.search_history = self.load_history()
-        self.preferences_file = Path("mod6_labs/user_preferences.json")
+        self.preferences_file = Path(__file__).parent / "user_preferences.json"
         self.load_preferences()
         self.setup_page()
         self.build_ui()
@@ -430,11 +430,11 @@ class WeatherApp:
         return []
 
     def save_history(self):
-        """Save search history to file."""
+        """Save search history to json file."""
         try:
             self.history_file.parent.mkdir(parents=True, exist_ok=True)
             with open(self.history_file, 'w') as f:
-                json.dump(self.search_history, f, indent = 2)
+                json.dump(self.search_history, f, indent=2)
         except Exception as e:
             print(f"Error saving history: {e}")
 

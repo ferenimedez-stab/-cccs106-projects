@@ -79,14 +79,14 @@ This is what the app looks like when ran. It automatically gets the weather data
 
 It loads in the <i>Current Weather</i> tab.
 
-![Landing page of the desktop weather app: window has a fixed dimension](assets\screenshots\image-1.png)
+![Landing page of the desktop weather app: window has a fixed dimension](assets/screenshots/image-1.png)
 
 **Forecast Tab**
 -
 The Forecast tab contains the 24-hour temperature forecast chart and the 5-day weather predictions.
 
-![Forecast Tab - 24-hour](assets\screenshots\image-2.png)
-![Forecast Tab - 24-hour](assets\screenshots\image-3.png)
+![Forecast Tab - 24-hour](assets/screenshots/image-2.png)
+![Forecast Tab - 24-hour](assets/screenshots/image-3.png)
 
 **Search Bar & Search History | Custom weather-informed background colors**
 -
@@ -96,14 +96,14 @@ The Forecast tab contains the 24-hour temperature forecast chart and the 5-day w
 2. Has custom gradient backgrounds that adjusts to match the city’s weather conditions.
 
 
-![Search Bar & Search History](assets\screenshots\image-5.png)
+![Search Bar & Search History](assets/screenshots/image-5.png)
 
 
 **Dark Theme | Temperature Unit Switching**
 1. Displays the window in its Dark Mode via its toggle.
 2. Displays the temperature in Fahrenheit via the button next to the theme toggle.
 
-![Dark Theme and Temperature Unit Change](assets\screenshots\image-6.png)
+![Dark Theme and Temperature Unit Change](assets/screenshots/image-6.png)
 ## Installation
 
 ### Prerequisites
