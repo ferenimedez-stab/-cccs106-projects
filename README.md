@@ -22,8 +22,11 @@ Academic Year 2025-2026
 ### Week 3 Labs - Flet User Login Application Development
 - `week3_labs/main.py` - User Login Form application with MySQL database integration
 
-### Week 4 Labs - Flet User Login Application Development
+### Week 4 Labs - Flet Contact Book Application Development
 - `week4_labs/main.py` - Contact Book application with SQLite database integration
+
+### Module 6 Labs - Weather App
+- `mod6_labs/main.py` - Desktop weather application built with Python and Flet.
 
 ### Module 1 Final Project
 - `module1_final/` - Final integrated project (TBD)
@@ -72,7 +75,6 @@ Academic Year 2025-2026
     - Note: Ensure your MySQL server is running and the fletapp database exists before running the app.
 
 ### Running Contact Book Application
-
 1. Open the `cccs106-projects` folder in File Explorer.
 
 2. In the address bar, type in `cmd` and press **Enter**.
@@ -87,3 +89,17 @@ Academic Year 2025-2026
    - [As desktop app] `flet run`
    - [As web app] `flet run --web`
    - [As android app] `flet run --android`
+
+### Running Weather Application
+1. Open the `cccs106-projects` folder in File Explorer.
+
+2. In the address bar, type in `cmd` and press **Enter**.
+
+3. Activate the virtual environment using the command:
+   - `cccs106_env_enimedez\Scripts\activate`
+
+4. Move to the `mod6_labs` directory by entering:
+   - `cd mod6_labs`
+
+5. Run the app using the command:
+   - `python main.py`
